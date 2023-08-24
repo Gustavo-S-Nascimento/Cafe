@@ -10,8 +10,7 @@ body {
 }
 
 header {
-    width: 99%;
-    height: 70px;
+    width: 93vw;
     padding: 10px;
     background-color: blanchedalmond;
     border-radius: 10px;
@@ -20,8 +19,7 @@ header {
 }
 
 .menu {
-    width: 50%;
-    height: 7px;
+    width: 80vw;
     padding: 0 auto;
 }
 
@@ -34,14 +32,37 @@ header {
     margin: 15px;
 }
 
-.main {
+.card1, .card2 {
     padding: 1%;
     margin: 5px;
     position: relative;
     border-radius: 10px;
-    width: fit-content ;
+    width: 92vw;
     background-color: burlywood;
     font-family: sans-serif;
     text-align: center;
     justify-content: right;
+    object-fit: cover;
+}
+
+.card1 > img {
+    width: 70vw;
+}
+
+@media (min-width: 992px) {
+
+    header {
+        width: 98vw;
+    }
+
+
+    .card1, .card2 {
+        width: 50vw;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .card1 > img {
+        width: 40vw;
+    }
 }
